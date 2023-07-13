@@ -1,5 +1,5 @@
 # Mortgage-Default-Predictions
-Using ML methods to predict mortgage defaults. Base data was released Fannie Mae
+Using ML methods to predict mortgage defaults. Base data was released Fannie Mae Single Family Loans
 
 # Overview #
 The goal of this project was to predict whether or not a mortage will defualt given a number of features relevent to the current state of the loan and the borrower. The base data collected was all released single family mortage data from Fannie Mae. (you can find this data here https://capitalmarkets.fanniemae.com/credit-risk-transfer/single-family-credit-risk-transfer/fannie-mae-single-family-loan-performance-data). This orginally data totaled over 400gb in size and in 80+ different excel files. I will do my best to format into third normal and relase a DB version in the following week or so. Due to memory and comp issues the only data used for this was Q2 2018. 
