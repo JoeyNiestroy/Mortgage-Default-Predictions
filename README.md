@@ -42,9 +42,9 @@ XGBoost  |     75%       |    97%            |   17%        |  76%     | 70%
 
 Overall XGBoost preforms far better across the board and that model still has not been optmized through any form of grid searching so there could be far more preformance left on the table. With reduced class weighting both models can produce 90%+ total accuracy but preformance on positive samples is destroyed. The exact parameters for each model can be found in the notebook. 
 
-Fannie Mae's protfolio (in Q2 2018) contains roughly 5.8% default mortatges (as defined above), in the mortgages classified as safe by the XGBoost model only **3.6%** were default. This is a **30%+** reduction in default rates. 
+Fannie Mae's protfolio (in Q2 2018) contains roughly 5.8% default mortatges (as defined above), in the mortgages classified as safe by the XGBoost model only **3.6%** were going to default. This is a **30%+** reduction in default rates. 
 
 I'd love to simulate the potential costs/margins changes if this model was implemented but it estimating recovery value from foreclosure and effectiveness of payments plans is comp expensive for 400gb+ of data so I'll update when it actually finishes running.  
 
 ## Further Research ##
-I'd like to expand my EDA of the data and maybe do a basic write up on the preformance of certain mortgage sellers and whether certains states are moving one direction or another in terms of loan safety. Obviously I outlined other improvement throught the writeup that I'll work on. 
+I'd like to expand my EDA of the data and maybe do a basic write up on the performance of certain mortgage sellers and whether certains states are moving one direction or another in terms of loan safety. Obviously I outlined other improvement throught the writeup that I'll work on. 
