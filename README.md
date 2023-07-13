@@ -32,7 +32,7 @@ The final dataset used in modeling removed all monthly samples with a loan delin
 
 ## Modeling and Results ##
 
-For the purpose of predicting defaults I stuck to two model. Basic logistic regression and XGBoosted trees. I would have liked to explore RF,SVM's and done more in depth hyperparamter tuning but I've done this project on my laptop while on vaction so don't have the compute as of right now. Xgboost handles nan values in features which allowed it to be trained off almost double the amount of data (Will add to my RF implementation bc we should have nan handling outside of XGB). Both models required class weighting to produce reasonable results. 
+For the purpose of predicting defaults I stuck to two model. Basic logistic regression and XGBoosted trees. I would have liked to explore RF,SVM's and done more in depth hyperparamter tuning but I've done this project on my laptop while on vaction so don't have the compute as of right now. Xgboost handles nan values in features which allowed it to be trained off almost double the amount of data (Will add to my RF implementation bc we should have nan handling outside of XGB). Both models required some form of class weighting to produce reasonable results. 
 The following results are from the 20% clean test data:
 
 Model Type    |  Accuracy    | Precision-Neg | Precision-Pos | Recall-Neg | Recall-Pos
@@ -40,7 +40,7 @@ Model Type    |  Accuracy    | Precision-Neg | Precision-Pos | Recall-Neg | Reca
 Logistic Regression  | 67%     | 95%           |    7%       |  68%       |   41% 
 XGBoost  |     75%       |    97%            |   17%        |  76%     | 70%
 
-Overall XGBoost preforms far better across the board and that model still has not been optmized through any form of grid searching so there could be far more preformance left on the table. For both models class weighting has a powerful effect on how conservative the model predicts. 
+Overall XGBoost preforms far better across the board and that model still has not been optmized through any form of grid searching so there could be far more preformance left on the table. With reduced class weighting both models can produce 90%+ total accuracy but preformance on positive samples is destroyed.
 
 I'd love to simulate the potential costs/margins changes if this model was implemented but it estimating recovery value from foreclosure and effectiveness of payments plans is comp expensive for 400gb+ of data so I'll update when it actually finishes running.  
 
