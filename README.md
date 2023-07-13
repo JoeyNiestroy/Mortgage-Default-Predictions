@@ -40,7 +40,7 @@ Model Type    |  Accuracy    | Precision-Neg | Precision-Pos | Recall-Neg | Reca
 Logistic Regression  | 67%     | 95%           |    7%       |  68%       |   41% 
 XGBoost  |     75%       |    97%            |   17%        |  76%     | 70%
 
-Overall XGBoost preforms far better across the board and that model still has not been optmized through any form of grid searching so there could be far more preformance left on the table.
+Overall XGBoost preforms far better across the board and that model still has not been optmized through any form of grid searching so there could be far more preformance left on the table. For both models class weighting has a powerful effect on how conservative the model predicts. 
 
 I'd love to simulate the potential costs/margins changes if this model was implemented but it estimating recovery value from foreclosure and effectiveness of payments plans is comp expensive for 400gb+ of data so I'll update when it actually finishes running.  
 
