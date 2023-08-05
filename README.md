@@ -40,7 +40,7 @@ Model Type    |  Accuracy    | Precision-Neg | Precision-Pos | Recall-Neg | Reca
 Logistic Regression  | 67%     | 95%           |    7%       |  68%       |   41% 
 XGBoost  |     75%       |    97%            |   17%        |  76%     | 70%
 
-Overall XGBoost preforms far better across the board and that model still has not been optmized through any form of grid searching so there could be far more preformance left on the table. With reduced class weighting both models can produce 90%+ total accuracy but preformance on positive samples is destroyed. The exact parameters for each model can be found in the notebook. 
+Overall XGBoost preforms far better across the board and that model still has not been optmized through any form of grid searching so there could be far more performance left on the table. With reduced class weighting both models can produce 90%+ total accuracy but preformance on positive samples is destroyed. The exact parameters for each model can be found in the notebook. 
 
 Fannie Mae's protfolio (in Q2 2018) contains roughly 5.8% default mortatges (as defined above), in the mortgages classified as safe by the XGBoost model only **3.6%** were going to default. This is a **30%+** reduction in default rates. 
 
