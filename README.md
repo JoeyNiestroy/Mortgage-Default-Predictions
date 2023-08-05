@@ -32,7 +32,7 @@ The final dataset used in modeling removed all monthly samples with a loan delin
 
 ## Modeling and Results ##
 
-For the purpose of predicting defaults I stuck to two model. Basic logistic regression and XGBoosted trees. I would have liked to explore RF,SVM's and done more in depth hyperparamter tuning but I've done this project on my laptop while on vaction so don't have the compute as of right now. Xgboost handles nan values in features which allowed it to be trained off almost double the amount of data (Will add to my RF implementation bc we should have nan handling outside of XGB). Both models required some form of class weighting to produce reasonable results. 
+For the purpose of predicting defaults I stuck to two model. Basic logistic regression and XGBoosted trees. I would have liked to explore RF,SVM's and done more in depth hyperparamter tuning but I've done this project on my laptop while on vaction so don't have the compute as of right now. Xgboost handles nan values in features which allowed it to be trained off almost double the amount of data. Both models required some form of class weighting to produce reasonable results. 
 The following results are from the 20% clean test data:
 
 Model Type    |  Accuracy    | Precision-Neg | Precision-Pos | Recall-Neg | Recall-Pos
