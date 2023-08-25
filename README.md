@@ -10,6 +10,7 @@ I pulled data equally across the 20 years of available data to avoid any macro e
 <img width="756" alt="features" src="https://github.com/JoeyNiestroy/Mortgage-Default-Predictions/assets/106636917/c6a3498a-cd99-4f12-a4dc-625e8bb9b025">
 
 The four engineered features are as follows: 
+
 _State_YoY_Change_ : Variable defined by whether a State's rates of defaults in the previous year was statstically different from the rest of the country (1:<,0:=,2:>)
 
 _Pct_left_UPB_ : The percent of the loan left to be paid
@@ -37,7 +38,7 @@ The following results are from the 20% clean test data:
 Model Type    |  Accuracy    | Precision-Neg | Precision-Pos | Recall-Neg | Recall-Pos
 ------------- | -------------| ---------     | ---------     | ---------- | --------- |
 Logistic Regression  | 93%     | 93%           |    94%       |  97%       |   86% 
-XGBoost  |     93%       |    91%            |   97%        |  97%     | 88%
+XGBoost  |     93%       |    91%            |   97%        |  98%     | 88%
 
 Overall XGBoost performs slightly better across the board and that model still has not been optmized through any form of grid searching so there could be far more performance left on the table.
 
