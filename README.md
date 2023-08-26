@@ -32,7 +32,7 @@ The final dataset used in modeling removed all monthly samples with a loan delin
 
 ## Modeling and Results ##
 
-For the purpose of predicting defaults I stuck to two model. Basic logistic regression and XGBoosted trees. I would have liked to explore a wider range of models and done more in depth hyperparamter tuning but I'm limited in compute. Xgboost handles nan values in features which allowed it to be trained off almost double the amount of data. 
+For the purpose of predicting defaults I stuck to three models. Logistic regression, XGBoosted trees, and RFs. I would have liked to explore a wider range of models and done more in depth hyperparamter tuning but I'm limited in compute. Xgboost handles nan values in features which allowed it to be trained off almost double the amount of data. 
 The following results are from the 20% clean test data:
 
 Model Type    |  Accuracy    | Precision-Neg | Precision-Pos | Recall-Neg | Recall-Pos
@@ -42,6 +42,8 @@ XGBoost  |     93%       |    91%            |   97%        |  98%     | 88%
 Random Forest  |     92%       |    90%            |   97%        |  99%     | 80%
 
 Overall XGBoost performs slightly better across the board and that model still has not been optmized through any form of grid searching so there could be far more performance left on the table. The tree models allow an interesting insights to feature importance; with interest rates, credit scores, and OLTV ranking very high. While surprisingly States and Sellers trended on average far lower.
+
+All hyperparameters were chosen by hand, will integrate some form of grid search in a couple days
 
 I'd love to simulate the potential costs/margins changes if this model was implemented but it estimating recovery value from foreclosure and effectiveness of payments plans is comp expensive for 400gb+ of data so I'll update when it actually finishes running.  
 
